@@ -1,0 +1,26 @@
+<div class="container">
+  <div class="search row">
+      <div class="col-6">
+        <app-datepicker></app-datepicker>
+      </div>
+      <div class="col-6">
+        <div class="mb-3">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" [(ngModel)]='shiftName'
+          (ngModelChange)="filterByName()">
+        </div>
+      </div>
+  </div>
+    <div class="list-group w-auto">
+      <a href="#" class="list-group-item list-group-item-action d-flex gap-3 py-3" aria-current="true"
+        *ngFor="let turno of turnos">
+        <img src="https://github.com/twbs.png" alt="twbs" width="32" height="32" class="rounded-circle flex-shrink-0">
+        <div class="d-flex gap-2 w-100 justify-content-between">
+          <div>
+            <h6 class="mb-0">{{turno.mascota}}</h6>
+            <p class="mb-0 opacity-75">{{turno.consulta}}</p>
+          </div>
+          <small class="opacity-50 text-nowrap">{{turno.hora}} - {{turno.fecha}}</small>
+        </div>
+      </a>
+    </div>
+</div>

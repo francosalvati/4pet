@@ -1,0 +1,25 @@
+*{
+  background: #fffcfc;
+}
+
+.bg {
+  position: relative;
+  width: 100%;
+  height: 60%;
+  z-index: 0;
+  overflow: hidden;
+  box-shadow: #444 0 0 20px -5px;
+}
+
+.bg__img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.register{
+  margin: 10% auto;
+  border-radius: 20px;
+  box-shadow: #444 0 0 15px -5px;
+}
+

@@ -31,8 +31,16 @@
                 "output": "./svg"
               }
             ],
-            "styles": ["src/theme/variables.scss", "src/global.scss"],
-            "scripts": []
+            "styles": [
+              "src/theme/variables.scss",
+              "src/global.scss",
+              "node_modules/bootstrap/dist/css/bootstrap.min.css"
+          ],
+            "scripts": [
+              "node_modules/jquery/dist/jquery.min.js",
+              "node_modules/popper.js/dist/umd/popper.min.js",
+              "node_modules/bootstrap/dist/js/bootstrap.min.js"
+            ]
           },
           "configurations": {
             "production": {
@@ -78,9 +86,6 @@
             },
             "development": {
               "browserTarget": "app:build:development"
-            },
-            "ci": {
-              "progress": false
             }
           },
           "defaultConfiguration": "development"
@@ -110,9 +115,7 @@
                 "input": "node_modules/ionicons/dist/ionicons/svg",
                 "output": "./svg"
               }
-            ],
-            "styles": ["src/theme/variables.scss", "src/global.scss"],
-            "scripts": []
+            ]
           },
           "configurations": {
             "ci": {
@@ -136,7 +139,8 @@
   "cli": {
     "schematicCollections": [
       "@ionic/angular-toolkit"
-    ]
+    ],
+    "analytics": "f159f0f8-1cae-4f3c-968c-2439b6375b83"
   },
   "schematics": {
     "@ionic/angular-toolkit:component": {
