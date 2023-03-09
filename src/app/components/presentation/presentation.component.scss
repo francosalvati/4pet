@@ -1,14 +1,26 @@
-*{
-  background: #fffcfc;
+
+.title h1, p{
+  color: #2C7EF4;
+  background-color: #f7f7f7;
+  position: relative;
+  top: 50px;
+  width: 100%;
+  z-index: 10;
+  background-color: transparent;
+}
+h1{
+  color: #2C7EF4;
 }
 
 .bg {
-  position: relative;
+  background-color: #f7f7f7;
+  position: absolute;
   width: 100%;
-  height: 60%;
+  padding-top: 5%;
+  height: 70%;
   z-index: 0;
   overflow: hidden;
-  box-shadow: #444 0 0 20px -5px;
+  box-shadow: #444 0 15px 25px -10px;
 }
 
 .bg__img{
@@ -18,8 +30,16 @@
 }
 
 .register{
-  margin: 10% auto;
+  color: #2C7EF4;
+  margin: 5% auto;
+  margin-top: 35%;
   border-radius: 20px;
   box-shadow: #444 0 0 15px -5px;
 }
 
+.logo{
+  background: transparent;
+  font-weight: bold;
+  color: #FFC736;
+  margin: 0;
+}

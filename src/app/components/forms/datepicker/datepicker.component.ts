@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import {NgbDateStruct, NgbCalendar} from '@ng-bootstrap/ng-bootstrap';
 
 @Component({
   selector: 'app-datepicker',
@@ -7,6 +8,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class DatepickerComponent {
 
-  constructor() { }
+  model!: NgbDateStruct;
+  date!: {year: number, month: number};
+
+  constructor(private calendar: NgbCalendar) {}
+
+  selectToday() {
+    this.model = this.calendar.getToday();
+  }
 }
 

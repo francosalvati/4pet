@@ -1,35 +1,37 @@
 <header>
-  <nav class="navbar navbar-expand-lg bg-body-tertiary p-0">
-    <div class="container-fluid p-1" style="background: #2C7EF4;">
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav m-auto mb-lg-0 d-flex justify-content-between w-75">
-          <li class="nav-item">
-            <a class="navbar-brand nav-link display-3 p-0" href="#" style="color: #FFC736;">
-              <h2>4PET</h2>
+  <div class="d-flex flex-md-row align-items-center border-bottom ">
+    <div class="container">
+      <nav class="list">
+        <ul class="d-flex align-items-center m-0 w-100">
+          <li class="d-flex">
+            <a href="/" class="text-decoration-none logo">
+              <h2>4Pets</h2>
             </a>
           </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle fw-bold text-light" href="#" role="button" data-bs-toggle="dropdown"
-              aria-expanded="false">
-              Que buscas?
-            </a>
-            <ul class="dropdown-menu text-light">
-              <li><a class="dropdown-item fw-bold" href="#">Turnos</a></li>
-              <li><a class="dropdown-item fw-bold" href="#">Registrar</a></li>
-              <li><a class="dropdown-item fw-bold" href="#">Exit</a></li>
-              <li>
-                <hr class="dropdown-divider">
-              </li>
-              <li>
-                <a class="dropdown-item dropdown-item-danger d-flex gap-2 align-items-center" href="#">
-                  Emergencias
-                </a>
-              </li>
-
-            </ul>
-          </li>
+          <div class="links d-flex">
+            <li>
+              <a class="text-decoration-none" href="home/turnos">Turnos</a>
+            </li>
+            <li>
+              <a class="text-decoration-none" href="home/vet">Veterinarias</a>
+            </li>
+            <li>
+              <a class="text-decoration-none" href="/login">Login</a>
+            </li>
+            <li class="dropdown show">
+              <div class= "dropdown-toggle" href="http://example.com" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">Dropdown</div>
+              <!-- <div class="dropdown-menu show" aria-labelledby="dropdown01">
+                <a class="dropdown-item" href="#">Action</a>
+                <a class="dropdown-item" href="#">Another action</a>
+                <a class="dropdown-item" href="#">Something else here</a>
+              </div> -->
+            </li>
+            <li class="emergencias">
+              <a class=" text-decoration-none" href="#">Emergencias</a>
+            </li>
+          </div>
         </ul>
-      </div>
+      </nav>
     </div>
-  </nav>
+  </div>
 </header>

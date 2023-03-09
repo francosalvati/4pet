@@ -13,6 +13,8 @@ import { DatepickerComponent } from '../components/forms/datepicker/datepicker.c
 import { MenuComponent } from '../components/menu/menu.component';
 import { ShiftComponent } from '../components/shift/shift.component';
 import { PresentationComponent } from '../components/presentation/presentation.component';
+import { FooterComponent } from '../components/footer/footer.component';
+import { VetListComponent } from '../components/vet-list/vet-list.component';
 
 @NgModule({
   imports: [
@@ -30,7 +32,9 @@ import { PresentationComponent } from '../components/presentation/presentation.c
       MenuComponent,
       DatepickerComponent,
       ShiftComponent,
-      PresentationComponent
+      PresentationComponent,
+      FooterComponent,
+      VetListComponent
     ]
 })
 export class HomePageModule { }

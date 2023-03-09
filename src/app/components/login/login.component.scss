@@ -3,6 +3,7 @@
 }
 .login{
   position: relative;
+  margin: auto;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -11,16 +12,7 @@
 }
 
 .background{
-  display: flex;
-  z-index: 10;
-  justify-content: center;
-  align-items: center;
-  position: absolute;
-  width: 35%;
-  min-width: 30%;
-  height: 100%;
-  background: #2C7EF4;
-  padding: 5%;
+  display: none;
 }
 
 .background h2{
@@ -38,12 +30,10 @@
 
 .card{
   position: relative;
-  transform: translateX(75%);
   background: #fffcfc;
   z-index: 100;
-  width: 25%;
-  margin: 4rem;
-  border-radius: 35px;
+  width: 100%;
+  border-radius: 10px;
   padding: 1rem;
   box-shadow: #000 -10px 10px 30px -20px;
   overflow: hidden;
@@ -86,4 +76,33 @@
   justify-content: center;
   align-items: center;
   width: 100%;
+}
+
+
+@media screen and (min-width:360px) {
+
+  .card{
+    width: 55%;
+  }
+
+}
+
+@media screen and ( min-width:800px) {
+  .card{
+    transform: translateX(75%);
+    width: 25%;
+  }
+  .background{
+    display: flex;
+    z-index: 10;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    width: 35%;
+    min-width: 30%;
+    height: 100%;
+    background: #2C7EF4;
+    padding: 5%;
+    text-align: end;
+  }
 }

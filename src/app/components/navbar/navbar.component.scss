@@ -1,0 +1,66 @@
+header{
+  width: 100%;
+  background-color: #2C7EF4;
+}
+
+.list{
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+.list ul{
+  position: relative;
+  right: 0;
+  width: 100%;
+  list-style: none;
+  line-height: 0;
+  justify-content: center;
+}
+
+.list li{
+  align-items: center;
+  padding: 20px 10px;
+  margin: 0 5px;
+  border-radius: 5px;
+
+}
+a{
+  color: #fff;
+}
+
+.list h2{
+  line-height: 0;
+  margin-right: 10px;
+}
+
+.list .emergencias{
+  position: absolute;
+  color: red;
+  background: #ffe7e7;
+  right: 0;
+}
+
+.list .emergencias a{
+  color: red;
+}
+
+.links li:hover{
+  text-decoration: underline #fff;
+  background: #9dc6ff;
+}
+
+.links .emergencias:hover{
+  color: #ffe7e7;
+  background: red;
+}
+
+.links .emergencias:hover a{
+  color: #ffe7e7;
+}
+
+.logo{
+  position: relative;
+  top: -5px;
+  left: -500%;
+}
+

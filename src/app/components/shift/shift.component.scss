@@ -1,0 +1,35 @@
+
+.grid{
+  margin: auto;
+  width: 90%;
+  display: grid;
+  grid-template-columns: 20% 80%;
+}
+
+.search_container{
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.search{
+  width: 90%;
+}
+
+.actual_day{
+  text-align: end;
+  margin-right: 30px;
+  color: #2b7ef4;
+}
+
+.cancel{
+  font-size: 15px;
+  color: red;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+img{
+  object-fit: cover;
+}

@@ -33,13 +33,9 @@
             ],
             "styles": [
               "src/theme/variables.scss",
-              "src/global.scss",
-              "node_modules/bootstrap/dist/css/bootstrap.min.css"
+              "src/global.scss"
           ],
             "scripts": [
-              "node_modules/jquery/dist/jquery.min.js",
-              "node_modules/popper.js/dist/umd/popper.min.js",
-              "node_modules/bootstrap/dist/js/bootstrap.min.js"
             ]
           },
           "configurations": {
@@ -86,6 +82,9 @@
             },
             "development": {
               "browserTarget": "app:build:development"
+            },
+            "ci": {
+              "progress": false
             }
           },
           "defaultConfiguration": "development"
@@ -115,6 +114,12 @@
                 "input": "node_modules/ionicons/dist/ionicons/svg",
                 "output": "./svg"
               }
+            ],
+            "styles": [
+              "src/theme/variables.scss",
+              "src/global.scss"
+          ],
+            "scripts": [
             ]
           },
           "configurations": {
