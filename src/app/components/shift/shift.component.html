@@ -1,19 +1,52 @@
-
-<div class="grid mt-4">
-  <div class="search_container">
-    <div class="datepicker">
-      <app-datepicker></app-datepicker>
+<div class="grid">
+  <div class="ms-2">
+    <div class="column shadow">
+      <div class="search_container d-flex flex-column pt-4">
+        <div class="datepicker">
+          <app-datepicker></app-datepicker>
+        </div>
+      </div>
+      <div class="center pb-4">
+        <h3 class="text-primary">Pedir un turno</h3>
+        <form class="d-flex flex-column form p-2 rounded justify-content-center">
+          <div class="form-group">
+            <label for="exampleFormControlInput1">User</label>
+            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+          </div>
+          <div class="form-group">
+            <label for="exampleFormControlSelect1">Dia</label>
+            <select class="form-control" id="exampleFormControlSelect1">
+              <option>1</option>
+              <option>2</option>
+              <option>3</option>
+              <option>4</option>
+              <option>5</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="exampleFormControlSelect2">Hora</label>
+            <select multiple class="form-control" id="exampleFormControlSelect2">
+              <option>1</option>
+              <option>2</option>
+              <option>3</option>
+              <option>4</option>
+              <option>5</option>
+            </select>
+          </div>
+          <button class="btn btn-primary m-2 mt-4">Solicitar</button>
+        </form>
+      </div>
     </div>
   </div>
 
-  <div class="list-group w-auto calendar">
-    <div class="d-flex">
-      <input class="form-control me-2 search" type="search" placeholder="Mascota..." aria-label="Search"
-      [(ngModel)]='shiftName' (ngModelChange)="filterByName()">
+
+  <div class="list-group w-auto calendar mt-4 ms-4">
+    <div class="d-flex justify-content-between">
+      <input class="form-control search m-2" type="search" placeholder="Mascota..." aria-label="Search"
+        [(ngModel)]='shiftName' (ngModelChange)="filterByName()">
       <h3 class="actual_day pe-4">Jueves 10, Junio 2023</h3>
     </div>
-    <li class="list-group-item list-group-item-action d-flex gap-3 " aria-current="true"
-      *ngFor="let turno of turnos">
+    <li class="list-group-item list-group-item-action d-flex gap-3 " aria-current="true" *ngFor="let turno of turnos">
       <div class="d-flex gap-2 w-100 justify-content-between">
         <div>
           <h6 class="mb-0">{{turno.mascota}}</h6>
@@ -26,31 +59,4 @@
       </div>
     </li>
   </div>
-
-  <form>
-    <div class="form-group">
-      <label for="exampleFormControlInput1">User</label>
-      <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
-    </div>
-    <div class="form-group">
-      <label for="exampleFormControlSelect1">Dia</label>
-      <select class="form-control" id="exampleFormControlSelect1">
-        <option>1</option>
-        <option>2</option>
-        <option>3</option>
-        <option>4</option>
-        <option>5</option>
-      </select>
-    </div>
-    <div class="form-group">
-      <label for="exampleFormControlSelect2">Hora</label>
-      <select multiple class="form-control" id="exampleFormControlSelect2">
-        <option>1</option>
-        <option>2</option>
-        <option>3</option>
-        <option>4</option>
-        <option>5</option>
-      </select>
-    </div>
-  </form>
 </div>

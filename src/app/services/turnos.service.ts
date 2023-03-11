@@ -36,6 +36,60 @@ export class TurnosService {
       consulta: 'revision',
       mascota: 'nombre2Mascota'
     },
+    {
+      fecha: '27/3/2020',
+      hora: '15:00',
+      consulta: 'revision',
+      mascota: 'nombre2Mascota'
+    },
+    {
+      fecha: '27/3/2020',
+      hora: '15:00',
+      consulta: 'revision',
+      mascota: 'nombre2Mascota'
+    },
+    {
+      fecha: '27/3/2020',
+      hora: '15:00',
+      consulta: 'revision',
+      mascota: 'nombre2Mascota'
+    },
+    {
+      fecha: '27/3/2020',
+      hora: '15:00',
+      consulta: 'revision',
+      mascota: 'nombre2Mascota'
+    },
+    {
+      fecha: '27/3/2020',
+      hora: '15:00',
+      consulta: 'revision',
+      mascota: 'nombre2Mascota'
+    },
+    {
+      fecha: '27/3/2020',
+      hora: '15:00',
+      consulta: 'revision',
+      mascota: 'nombre2Mascota'
+    },
+    {
+      fecha: '27/3/2020',
+      hora: '15:00',
+      consulta: 'revision',
+      mascota: 'nombre2Mascota'
+    },
+    {
+      fecha: '27/3/2020',
+      hora: '15:00',
+      consulta: 'revision',
+      mascota: 'nombre2Mascota'
+    },
+    {
+      fecha: '27/3/2020',
+      hora: '15:00',
+      consulta: 'revision',
+      mascota: 'nombre2Mascota'
+    },
   ]
   constructor() { }
 }

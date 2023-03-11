@@ -1,14 +1,46 @@
-<div class="flex">
-  <div class="searcher">
-    <input type="text">
+<div class="grid">
+  <div class="column">
+    <div class="searcher">
+      <h3 class="display-4">4Pets</h3>
+      <h3>Filtro</h3>
+      <div class="form-group">
+        <label for="">nombre</label>
+        <input type="text" class="form-control" placeholder="Nombre veterinaria">
+      </div>
+      <div class="form-group">
+        <label for="exampleFormControlSelect1">Ciudad</label>
+        <select class="form-control" id="exampleFormControlSelect1">
+          <option>1</option>
+          <option>2</option>
+          <option>3</option>
+          <option>4</option>
+          <option>5</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="">Disponibilidad</label>
+        <input type="text" class="form-control" placeholder="Horarios">
+      </div>
+    </div>
   </div>
   <div class="container-fluid">
-    <div class=" mr-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden" *ngFor="let item of vetList">
-      <div class="my-3 p-3">
-        <h2 class="display-5">Another headline</h2>
-        <p class="lead">And an even wittier subheading.</p>
-      </div>
-      <div class="card box-shadow mx-auto">
+    <div class="mr-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden card m-4" style="height: 500px;" *ngFor="let vet of vetList">
+      <img src="https://www.simbiotia.com/wp-content/uploads/diseno-de-clinicas-veterinarias.jpg" class="img" alt="">
+      <div class="card cart box-shadow mx-auto">
+        <h2>{{vet.name}}</h2>
+        <ul class="list">
+          <li>
+            <p>cel: <span>{{vet.phone}}</span></p>
+          </li>
+          <li>
+            <p>direccion: <span>{{vet.adress}}</span></p>
+          </li>
+          <li>
+            <p>horarios: <span>{{vet.working_hour}}</span> hrs.</p>
+          </li>
+        </ul>
+
+
 
       </div>
     </div>

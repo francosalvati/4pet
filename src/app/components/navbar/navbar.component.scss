@@ -3,6 +3,14 @@ header{
   background-color: #2C7EF4;
 }
 
+.logo{
+  position: relative;
+  top: -5px;
+  font-weight: bold;
+  font-size: 50px;
+  color: #FFC736;
+}
+
 .list{
   display: flex;
   justify-content: center;
@@ -34,7 +42,7 @@ a{
 }
 
 .list .emergencias{
-  position: absolute;
+  position: relative;
   color: red;
   background: #ffe7e7;
   right: 0;
@@ -58,9 +66,5 @@ a{
   color: #ffe7e7;
 }
 
-.logo{
-  position: relative;
-  top: -5px;
-  left: -500%;
-}
+
 

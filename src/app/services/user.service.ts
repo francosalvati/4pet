@@ -9,7 +9,7 @@ export class UserService {
 
   vet: Vet[] = [
     {
-      adress: 'pinto 111',
+      adress: 'city, pinto 111',
       certification: 'vetify certification',
       logo: 'LOGO',
       phone: '23249802',
@@ -20,7 +20,7 @@ export class UserService {
       working_hour: '10-20'
     },
     {
-      adress: 'pinto 111',
+      adress: 'city, pinto 111',
       certification: 'vetify certification',
       logo: 'LOGO',
       phone: '23249802',

@@ -26,12 +26,8 @@ import { VetListComponent } from '../components/vet-list/vet-list.component';
   declarations: [
       HomePage,
       NavbarComponent,
-      PetComponent,
       VetComponent,
-      UserComponent,
       MenuComponent,
-      DatepickerComponent,
-      ShiftComponent,
       PresentationComponent,
       FooterComponent,
       VetListComponent
