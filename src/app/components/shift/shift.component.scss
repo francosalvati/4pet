@@ -1,53 +1,75 @@
-
-.grid{
-  width: 95%;
-  display: grid;
-  grid-template-columns: 20% 80%;
-}
-
-.center{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-}
-
-.search_container{
+.search_container {
   display: flex;
   width: 100%;
   align-items: center;
   justify-content: space-evenly;
 }
 
-.search{
-  width: 50%;
-}
-
-.actual_day{
+.actual_day {
   text-align: end;
   margin-right: 30px;
   color: #2b7ef4;
 }
 
-.cancel{
+.cancel {
   font-size: 15px;
   color: red;
   text-decoration: underline;
   cursor: pointer;
 }
 
-img{
+img {
   object-fit: cover;
 }
 
-.form{
+.form {
   width: 95%;
 }
 
-h2{
+h2 {
   font-weight: bold;
 }
 
-.column{
+.column {
   background: #ddd;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+
+@media screen and (min-width: 500px) {
+  .grid {
+    margin: auto;
+    width: 95%;
+    display: grid;
+    grid-template-columns: 30% 600px;
+  }
+
+  .search {
+    width: 50%;
+  }
+
+}
+
+@media screen and (max-width: 1200px) {
+  .datepicker {
+    transform: scale(0.9);
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .datepicker {
+    transform: scale(0.8);
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .grid {
+    grid-template-columns: 40% 1fr;
+  }
 }

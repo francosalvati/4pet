@@ -1,20 +1,18 @@
-
-.title h1, p{
-  color: #2C7EF4;
-  background-color: #f7f7f7;
-  position: relative;
-  top: 50px;
-  width: 100%;
-  z-index: 10;
-  background-color: transparent;
+* {
+  margin: 0;
+  box-sizing: border-box;
 }
-h1{
-  color: #2C7EF4;
+
+.presentation {
+  position: relative;
+  height: 100%;
+  padding: 0;
+  margin: 0;
 }
 
 .bg {
-  background-color: #f7f7f7;
   position: absolute;
+  background-color: #f7f7f7;
   width: 100%;
   padding-top: 5%;
   height: 70%;
@@ -23,23 +21,69 @@ h1{
   box-shadow: #444 0 15px 25px -10px;
 }
 
-.bg__img{
+.bg__img {
   width: 100%;
-  height: 100%;
+  transform: translateY(100%);
   object-fit: cover;
 }
 
-.register{
+.title  {
   color: #2C7EF4;
-  margin: 5% auto;
-  margin-top: 35%;
-  border-radius: 20px;
-  box-shadow: #444 0 0 15px -5px;
+  position: relative;
+  top: 100px;
+  width: 100%;
+  z-index: 10;
+  background-color: transparent;
 }
 
-.logo{
+.title p {
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+
+h1 , p{
+  color: #2C7EF4;
+}
+
+.logo {
   background: transparent;
   font-weight: bold;
   color: #FFC736;
   margin: 0;
+}
+
+.apartado {
+  margin-top: 150px;
+}
+
+.apartado__cards{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+
+@media screen and (min-width: 400px) {}
+
+
+@media screen and (min-width: 800px) {
+
+  .title{
+    top: 30px;
+  }
+
+  .title p {
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  .bg__img {
+    height: 100%;
+    transform: translateY(0);
+  }
 }

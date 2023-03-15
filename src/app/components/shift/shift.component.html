@@ -6,38 +6,43 @@
           <app-datepicker></app-datepicker>
         </div>
       </div>
-      <div class="center pb-4">
-        <h3 class="text-primary">Pedir un turno</h3>
-        <form class="d-flex flex-column form p-2 rounded justify-content-center">
-          <div class="form-group">
-            <label for="exampleFormControlInput1">User</label>
-            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+      <!-- Button trigger modal -->
+      <div class="d-flex justify-content-center">
+        <button type="button" class="btn btn-outline-primary my-4" data-bs-toggle="modal" data-bs-target="#turnosModal">
+          Pedir un turno
+        </button>
+      </div>
+      <!-- Modal -->
+      <div class="modal fade" id="turnosModal" role="dialog"  >
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="exampleModalLabel">New message</h1>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <form>
+                <div class="mb-3">
+                  <label for="recipient-name" class="col-form-label">Recipient:</label>
+                  <input type="text" class="form-control" id="recipient-name">
+                </div>
+                <div class="mb-3">
+                  <label for="message-text" class="col-form-label">Message:</label>
+                  <input type="text" class="form-control">
+                </div>
+              </form>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-primary">Solicitar</button>
+            </div>
           </div>
-          <div class="form-group">
-            <label for="exampleFormControlSelect1">Dia</label>
-            <select class="form-control" id="exampleFormControlSelect1">
-              <option>1</option>
-              <option>2</option>
-              <option>3</option>
-              <option>4</option>
-              <option>5</option>
-            </select>
-          </div>
-          <div class="form-group">
-            <label for="exampleFormControlSelect2">Hora</label>
-            <select multiple class="form-control" id="exampleFormControlSelect2">
-              <option>1</option>
-              <option>2</option>
-              <option>3</option>
-              <option>4</option>
-              <option>5</option>
-            </select>
-          </div>
-          <button class="btn btn-primary m-2 mt-4">Solicitar</button>
-        </form>
+        </div>
       </div>
     </div>
   </div>
+
+
+
 
 
   <div class="list-group w-auto calendar mt-4 ms-4">

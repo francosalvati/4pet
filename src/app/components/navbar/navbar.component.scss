@@ -1,9 +1,13 @@
-header{
+header {
   width: 100%;
   background-color: #2C7EF4;
 }
 
-.logo{
+.desktop {
+  display: flex;
+}
+
+.logo {
   position: relative;
   top: -5px;
   font-weight: bold;
@@ -11,60 +15,124 @@ header{
   color: #FFC736;
 }
 
-.list{
-  display: flex;
-  justify-content: center;
-  width: 100%;
+.desktop .links {
+  display: none;
 }
-.list ul{
-  position: relative;
+
+.responsive {
+  display: none;
+  position: fixed;
+  top: 0;
   right: 0;
-  width: 100%;
-  list-style: none;
-  line-height: 0;
-  justify-content: center;
+  z-index: 1000;
+  height: 100%;
+  background: #2C7EF4;
+  width: 5rem;
 }
 
-.list li{
-  align-items: center;
-  padding: 20px 10px;
-  margin: 0 5px;
-  border-radius: 5px;
-
-}
-a{
-  color: #fff;
+.responsive a {
+  padding: 0;
+  padding: 10px 0;
 }
 
-.list h2{
-  line-height: 0;
-  margin-right: 10px;
+.responsive p {
+  font-size: 10px;
+  margin: 0;
 }
 
-.list .emergencias{
-  position: relative;
-  color: red;
+
+.emergencias {
   background: #ffe7e7;
-  right: 0;
 }
 
-.list .emergencias a{
+.emergencias a {
   color: red;
 }
 
-.links li:hover{
-  text-decoration: underline #fff;
-  background: #9dc6ff;
-}
-
-.links .emergencias:hover{
+.emergencias:hover {
   color: #ffe7e7;
   background: red;
 }
 
-.links .emergencias:hover a{
+.emergencias:hover a {
   color: #ffe7e7;
 }
 
+a {
+  color: #fff;
+}
 
+.btn_responsive{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 25px;
+  right: 20px;
+  z-index: 1100;
+}
 
+.dropdown:hover{
+  color: #fff;
+}
+
+.dropdown:focus{
+  color: #fff;
+}
+
+.dropdown a:hover{
+  color: #fff;
+}
+
+@media screen and (min-width: 800px) {
+  .desktop .links {
+    display: flex;
+  }
+
+  .list {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .list ul {
+    position: relative;
+    right: 0;
+    width: 100%;
+    list-style: none;
+    line-height: 0;
+    justify-content: center;
+  }
+
+  .list li {
+    align-items: center;
+    padding: 20px 10px;
+    margin: 0 5px;
+    border-radius: 5px;
+
+  }
+
+  .list h2 {
+    line-height: 0;
+    margin-right: 10px;
+  }
+
+  .list .emergencias {
+    position: relative;
+    right: 0;
+  }
+
+  .links li:hover {
+    text-decoration: underline #fff;
+    background: #9dc6ff;
+  }
+
+  .responsive {
+    display: none;
+  }
+
+  .btn_responsive{
+    display: none;
+  }
+
+}
