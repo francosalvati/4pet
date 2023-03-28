@@ -1,7 +1,6 @@
 <div class="grid">
-  <div class="column">
+  <div class="">
     <div class="searcher">
-      <h3 class="display-4">4Pets</h3>
       <h3>Filtro</h3>
       <div class="form-group">
         <label for="">nombre</label>
@@ -23,8 +22,12 @@
       </div>
     </div>
   </div>
+
+
+
   <div class="container-fluid">
-    <div class="mr-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden card m-4" style="height: 500px;" *ngFor="let vet of vetList">
+    <div class="mr-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden card m-4" style="height: 500px;"
+      *ngFor="let vet of vetList">
       <img src="https://www.simbiotia.com/wp-content/uploads/diseno-de-clinicas-veterinarias.jpg" class="img" alt="">
       <div class="card cart box-shadow mx-auto">
         <h2>{{vet.name}}</h2>

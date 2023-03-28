@@ -72,18 +72,6 @@ a {
   z-index: 1100;
 }
 
-.dropdown:hover{
-  color: #fff;
-}
-
-.dropdown:focus{
-  color: #fff;
-}
-
-.dropdown a:hover{
-  color: #fff;
-}
-
 @media screen and (min-width: 800px) {
   .desktop .links {
     display: flex;
@@ -110,6 +98,30 @@ a {
     margin: 0 5px;
     border-radius: 5px;
 
+  }
+
+  .dropdown:hover{
+    color: #fff;
+  }
+
+  .dropdown a{
+    color: #fff;
+  }
+
+  .dropdown:focus{
+    color: #fff;
+  }
+
+  .dropdown a:hover{
+    color: #fff;
+  }
+
+  .dropdown-menu{
+    background: #2C7EF4;
+  }
+
+  .dropdown-menu a:hover{
+    background: transparent;
   }
 
   .list h2 {

@@ -6,15 +6,12 @@ import { HomePage } from './home.page';
 
 import { HomePageRoutingModule } from './home-routing.module';
 import { NavbarComponent } from '../components/navbar/navbar.component';
-import { PetComponent } from '../components/forms/pet/pet.component';
 import { VetComponent } from '../components/forms/vet/vet.component';
-import { UserComponent } from '../components/forms/user/user.component';
-import { DatepickerComponent } from '../components/forms/datepicker/datepicker.component';
 import { MenuComponent } from '../components/menu/menu.component';
-import { ShiftComponent } from '../components/shift/shift.component';
 import { PresentationComponent } from '../components/presentation/presentation.component';
 import { FooterComponent } from '../components/footer/footer.component';
 import { VetListComponent } from '../components/vet-list/vet-list.component';
+import { UserScreenComponent } from '../components/screens/user-screen/user-screen.component';
 
 @NgModule({
   imports: [
@@ -24,13 +21,14 @@ import { VetListComponent } from '../components/vet-list/vet-list.component';
     HomePageRoutingModule
   ],
   declarations: [
-      HomePage,
-      NavbarComponent,
-      VetComponent,
-      MenuComponent,
-      PresentationComponent,
-      FooterComponent,
-      VetListComponent
-    ]
+    HomePage,
+    NavbarComponent,
+    VetComponent,
+    MenuComponent,
+    PresentationComponent,
+    FooterComponent,
+    VetListComponent,
+    UserScreenComponent
+  ]
 })
 export class HomePageModule { }

@@ -1,8 +1,19 @@
+@media screen and (min-width: 800px) {
 
-.grid{
-  display: grid;
-  grid-template-columns: 20% 1fr;
+  .grid {
+    display: grid;
+    grid-template-columns: 30% 1fr;
+    margin: auto;
+    width: 95%;
+  }
+
+  .searcher {
+    background-color: #ddd;
+    height: 100%;
+    width: 100%;
+  }
 }
+
 .container-fluid {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -10,24 +21,13 @@
   width: 100%;
   padding: 0;
 }
-.column{
-  background-color: #ddd;
-  display: flex;
-  justify-content: center;
-  width: 100%;
-  padding: 1rem;
-}
 
-.searcher{
-height: 100%;
-width: 100%;
-}
 
-.card{
+.card {
   position: relative;
 }
 
-.card .img{
+.card .img {
   position: absolute;
   top: 0;
   left: 0;
@@ -37,7 +37,8 @@ width: 100%;
   object-fit: cover;
   opacity: .7;
 }
-.card h2{
+
+.card h2 {
   position: relative;
   z-index: 100;
 }
@@ -57,19 +58,19 @@ width: 100%;
   border-radius: 21px 21px 0 0;
 }
 
-.card:hover .cart{
+.card:hover .cart {
   background: #fff;
 }
 
-.cart h2{
+.cart h2 {
   font-size: 50px;
   font-weight: bold;
 }
 
-.list{
+.list {
   list-style: none;
 }
 
-.list span{
+.list span {
   font-size: 20px;
 }

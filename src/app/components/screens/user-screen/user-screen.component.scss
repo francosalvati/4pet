@@ -1,0 +1,41 @@
+.container{
+  position: relative;
+}
+
+
+.contact{
+  display: none;
+  position: absolute;
+  width: 98%;
+  left: 1%;
+  margin-top: 1rem;
+}
+
+.contact span{
+  margin: 0 5%;
+}
+
+img{
+  width: 100px;
+  height: 100px;
+}
+
+.list{
+  height: 50%;
+}
+
+.turnos{
+  display: flex;
+  justify-content: end;
+}
+
+.cal_icon:hover{
+  background: #eee;
+  transform: scale(105%);
+}
+
+.cal_icon{
+  font-size: 100px;
+  color: #2C7EF4;
+  border: 2px solid #2C7EF4;
+}
