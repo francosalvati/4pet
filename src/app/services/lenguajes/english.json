@@ -1,0 +1,13 @@
+{
+  "login": "login",
+  "signIn": "sign in",
+  "emergency": "emergency",
+  "veterinary": "veterinary",
+  "pets": "pets",
+  "user": "user",
+  "profile": "profile",
+  "welcome": "welcome",
+  "config": "config",
+  "shift": "shift",
+  "slogan" : "Not only does it help you, but also your best friend"
+}
