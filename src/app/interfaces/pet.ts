@@ -1,14 +1,15 @@
 export interface Pet {
-  birthday: Date;
-  castrated: boolean;
-  color: string;
-  gender: string;
-  chip: boolean;
   name: string;
-  photo: string;
+  birthday: Date;
+  species: string;
   race: string;
-  specie: string;
+  gender: string;
+  castrated: boolean;
   weight: number;
+  color: string;
+  has_chip: boolean;
+  photo: string;
+  pet_id: string;
 }
 
 export interface History extends Pet{

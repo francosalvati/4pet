@@ -26,13 +26,13 @@
   height: 40px;
   border-radius: 50%;
 }
-.cal-days .cal-btn:focus{
-  background: #2b7ef4;
-  color: #fff;
-}
 .cal-days .cal-btn:hover {
   background: #b0d0fd;
   color: #2b7ef4;
+}
+.cal-days .cal-btn:focus{
+  background: #2b7ef4;
+  color: #fff;
 }
 
 @mixin button-outline-variant(){

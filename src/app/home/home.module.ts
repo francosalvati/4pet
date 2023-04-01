@@ -12,13 +12,15 @@ import { PresentationComponent } from '../components/presentation/presentation.c
 import { FooterComponent } from '../components/footer/footer.component';
 import { VetListComponent } from '../components/vet-list/vet-list.component';
 import { UserScreenComponent } from '../components/screens/user-screen/user-screen.component';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
     IonicModule,
-    HomePageRoutingModule
+    HomePageRoutingModule,
+    HttpClientModule
   ],
   declarations: [
     HomePage,

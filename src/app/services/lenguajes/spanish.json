@@ -1,0 +1,13 @@
+{
+  "login": "login",
+  "signIn": "registrarse",
+  "emergency": "emergencia",
+  "veterinary": "veterinaria",
+  "pets": "pets",
+  "user": "usuario",
+  "profile": "perfil",
+  "welcome": "bienvenido",
+  "config": "configuracion",
+  "shift": "turnos",
+  "slogan" : "NO SOLO TE AYUDA A TI SINO TAMBIEN A TU MEJOR AMIGO"
+}

@@ -24,7 +24,7 @@ img{
   height: 50%;
 }
 
-.turnos{
+.icons{
   display: flex;
   justify-content: end;
 }
@@ -32,10 +32,11 @@ img{
 .cal_icon:hover{
   background: #eee;
   transform: scale(105%);
+  cursor: pointer;
 }
 
 .cal_icon{
-  font-size: 100px;
+  font-size: 40px;
   color: #2C7EF4;
   border: 2px solid #2C7EF4;
 }

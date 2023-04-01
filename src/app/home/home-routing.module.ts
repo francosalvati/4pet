@@ -3,10 +3,11 @@ import { RouterModule, Routes } from '@angular/router';
 import { HomePage } from './home.page';
 
 //components
-import { ShiftComponent } from '../components/shift/shift.component';
+import { ApointmentComponent } from '../components/apointment/apointment.component';
 import { UserScreenComponent } from '../components/screens/user-screen/user-screen.component';
 import { PresentationComponent } from '../components/presentation/presentation.component';
 import { VetListComponent } from '../components/vet-list/vet-list.component';
+import { ClinicHistoryComponent } from '../components/clinic-history/clinic-history.component';
 
 const routes: Routes = [
   {
@@ -27,7 +28,11 @@ const routes: Routes = [
       },
       {
         path: 'turnos',
-        component: ShiftComponent,
+        component: ApointmentComponent,
+      },
+      {
+        path: 'historia',
+        component: ClinicHistoryComponent,
       },
       {
         path: '**',

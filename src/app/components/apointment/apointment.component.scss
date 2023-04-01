@@ -11,6 +11,10 @@
   color: #2b7ef4;
 }
 
+.datepicker {
+  transform: scale(0.9);
+}
+
 .cancel {
   font-size: 15px;
   color: red;
@@ -41,14 +45,21 @@ h2 {
   flex-direction: column;
 }
 
+.my-form {
+  background-color: #f2f2f2;
+  padding: 20px;
+}
 
-@media screen and (min-width: 500px) {
-  .grid {
-    margin: auto;
-    width: 95%;
-    display: grid;
-    grid-template-columns: 30% 600px;
+.modal{
+  position: fixed;
+  z-index: 1400 !important;
+}
+
+@media screen and (min-width: 600px) {
+  .datepicker {
+    transform: scale(1);
   }
+
 
   .search {
     width: 50%;
@@ -56,20 +67,33 @@ h2 {
 
 }
 
-@media screen and (max-width: 1200px) {
+@media screen and (min-width: 800px) {
+
   .datepicker {
-    transform: scale(0.9);
+    transform: scale(0.7);
   }
+
+  .grid {
+    margin: auto;
+    width: 95%;
+    display: grid;
+    grid-template-columns: 30% 600px;
+  }
+
 }
 
-@media screen and (max-width: 1000px) {
+@media screen and (min-width: 1000px) {
+
   .datepicker {
     transform: scale(0.8);
   }
+
 }
 
-@media screen and (max-width: 900px) {
-  .grid {
-    grid-template-columns: 40% 1fr;
+@media screen and (min-width: 1200px) {
+
+  .datepicker {
+    transform: scale(0.9);
   }
+
 }
