@@ -7,6 +7,7 @@ import { ShiftComponent } from '../components/shift/shift.component';
 import { UserScreenComponent } from '../components/screens/user-screen/user-screen.component';
 import { PresentationComponent } from '../components/presentation/presentation.component';
 import { VetListComponent } from '../components/vet-list/vet-list.component';
+import { PetComponent } from '../components/forms/pet/pet.component';
 
 const routes: Routes = [
   {
@@ -16,6 +17,10 @@ const routes: Routes = [
       {
         path: '',
         component: PresentationComponent,
+      },
+      {
+        path: 'formPet',
+        component: PetComponent,
       },
       {
         path: 'vet',
