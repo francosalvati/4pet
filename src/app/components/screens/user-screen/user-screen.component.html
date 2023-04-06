@@ -1,4 +1,4 @@
-<div class="container mx-auto w-75">
+<div class="container mx-auto w-75 my-5 pt-4 ">
   <div class="grid">
     <div class="row">
       <div class="col d-flex justify-content-center align-items-center flex-column">
@@ -22,23 +22,33 @@
         <p><strong>Biografía:</strong> Breve descripción del usuario</p>
       </div>
       <div class="col">
-        <div class="icons">
+        <div class="icons me-4">
           <ion-icon name="calendar-outline" class="cal_icon rounded p-2 mx-1 mt-4"></ion-icon>
-          <a href="home/historia">
-            <ion-icon name="attach-outline" class="cal_icon rounded p-2 mx-1 mt-4"></ion-icon>
-          </a>
         </div>
       </div>
     </div>
   </div>
 </div>
 
-<div class="container list mt-4">
-  <ul class="list-group list-group-flush">
-    <li class="list-group-item">An item</li>
-    <li class="list-group-item">A second item</li>
-    <li class="list-group-item">A third item</li>
-    <li class="list-group-item">A fourth item</li>
-    <li class="list-group-item">And a fifth one</li>
-  </ul>
+
+<div class="container">
+  <div class="list-group">
+    <a class="list-group-item list-group-item-action p-0" aria-current="true" *ngFor="let pet of pets">
+      <div class="d-flex w-100 justify-content-between">
+        <div class="d-flex">
+          <img src="https://img.freepik.com/vector-gratis/cute-dog-logo_1051-3349.jpg" class="m-0" alt="">
+          <div >
+            <h5 class="mb-1">{{pet.name}}</h5>
+            <p class="mb-1">Some placeholder content in a paragraph.</p>
+            <small>And some small print.</small>
+          </div>
+        </div>
+        <div class="icons me-3">
+          <a href="home/historia/{{pet.id}}">
+            <ion-icon name="attach-outline" class="cal_icon rounded p-2 mx-1 mt-4"></ion-icon>
+          </a>
+        </div>
+      </div>
+    </a>
+  </div>
 </div>

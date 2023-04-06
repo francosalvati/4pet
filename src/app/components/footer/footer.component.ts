@@ -7,8 +7,28 @@ import { Component, OnInit } from '@angular/core';
 })
 export class FooterComponent implements OnInit {
 
-  constructor() { }
+  accions: string[];
+  gadgets: string[];
 
-  ngOnInit() {}
+
+  constructor() {
+    this.accions = [
+      'Información',
+      'Contacto',
+      'Empleo',
+      'API',
+      'Privacidad',
+      'Condiciones',
+      'Cuentas destacadas',
+      'Ubicaciones',
+      'Subir contactos y personas no usuarias'
+    ]
+    this.gadgets = [
+      'lenguajes',
+      'company'
+    ]
+  }
+
+  ngOnInit() { }
 
 }

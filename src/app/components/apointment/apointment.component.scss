@@ -1,3 +1,5 @@
+@import '../../../theme/variables.scss';
+
 .search_container {
   display: flex;
   width: 100%;
@@ -8,7 +10,7 @@
 .actual_day {
   text-align: end;
   margin-right: 30px;
-  color: #2b7ef4;
+  color: $color-azul;
 }
 
 .datepicker {
@@ -88,12 +90,26 @@ h2 {
     transform: scale(0.8);
   }
 
+  .grid {
+    margin: auto;
+    width: 95%;
+    display: grid;
+    grid-template-columns: 30% 700px;
+  }
+
 }
 
 @media screen and (min-width: 1200px) {
 
   .datepicker {
     transform: scale(0.9);
+  }
+
+  .date-picker{
+    position: absolute;
+    width: 20%;
+    right: 10%;
+    top: 10%;
   }
 
 }

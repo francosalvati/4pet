@@ -17,6 +17,7 @@ import { HttpClientModule, HttpClient } from '@angular/common/http';
 import { TranslateLoader, TranslateModule } from '@ngx-translate/core';
 import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 import { ApointmentComponent } from './components/apointment/apointment.component';
+import { CardComponent } from './components/clinic-history/card/card.component';
 
 @NgModule({
   declarations: [
@@ -33,6 +34,7 @@ import { ApointmentComponent } from './components/apointment/apointment.componen
     IonicModule.forRoot(),
     AppRoutingModule,
     FormsModule,
+    ReactiveFormsModule,
     NgbModule,
     ReactiveFormsModule,
     HttpClientModule,

@@ -7,11 +7,9 @@ import { ApointmentComponent } from '../components/apointment/apointment.compone
 import { UserScreenComponent } from '../components/screens/user-screen/user-screen.component';
 import { PresentationComponent } from '../components/presentation/presentation.component';
 import { VetListComponent } from '../components/vet-list/vet-list.component';
-<<<<<<< HEAD
 import { PetComponent } from '../components/forms/pet/pet.component';
-=======
 import { ClinicHistoryComponent } from '../components/clinic-history/clinic-history.component';
->>>>>>> c6aa8f1af8c5869d878180c59fdd5b6359a16b63
+
 
 const routes: Routes = [
   {
@@ -39,7 +37,7 @@ const routes: Routes = [
         component: ApointmentComponent,
       },
       {
-        path: 'historia',
+        path: 'historia/:id',
         component: ClinicHistoryComponent,
       },
       {

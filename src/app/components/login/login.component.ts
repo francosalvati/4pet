@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { FormControl, FormGroup, Validators } from '@angular/forms';
 import { Route, Router } from '@angular/router';
 
 @Component({
@@ -8,11 +9,30 @@ import { Route, Router } from '@angular/router';
 })
 export class LoginComponent implements OnInit {
 
-  constructor(private router: Router) { }
+  loginForm: FormGroup;
 
-  ngOnInit() {}
+    userControl: FormControl = new FormControl('', [
+      Validators.required,
+      Validators.email
+    ]);
+    passControl: FormControl = new FormControl('', [
+      Validators.required
+    ])
 
-  navigateToSignIn(){
+  constructor(private router: Router) {
+    this.loginForm = new FormGroup({
+      user: this.userControl,
+      password: this.passControl
+    })
+  }
+
+  ngOnInit() { }
+
+  navigateToSignIn() {
     this.router.navigate(['/sign-in'])
+  }
+
+  onSubmit(){
+
   }
 }

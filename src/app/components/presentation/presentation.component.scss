@@ -1,3 +1,5 @@
+@import '../../../theme/variables.scss';
+
 * {
   margin: 0;
   box-sizing: border-box;
@@ -28,7 +30,7 @@
 }
 
 .title  {
-  color: #2C7EF4;
+  color: $color-azul;
   position: relative;
   top: 100px;
   width: 100%;
@@ -46,13 +48,13 @@
 
 
 h1 , p{
-  color: #2C7EF4;
+  color: $color-azul;
 }
 
 .logo {
   background: transparent;
   font-weight: bold;
-  color: #FFC736;
+  color: $color-amarillo;
   margin: 0;
 }
 
@@ -62,6 +64,9 @@ h1 , p{
 
 .apartado__cards{
   display: flex;
+  justify-content: center;
+  width: 100%;
+  gap: 10px;
   flex-wrap: wrap;
 }
 

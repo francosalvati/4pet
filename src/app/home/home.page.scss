@@ -26,3 +26,18 @@
   text-decoration: none;
 }
 
+ion-content{
+  grid-template-areas:
+                      'b b b'
+                      'b b b'
+                      'b b b'
+                      'f f f';
+}
+
+.body{
+  grid-area: 'b';
+}
+
+app-footer{
+  grid-area: 'f';
+}

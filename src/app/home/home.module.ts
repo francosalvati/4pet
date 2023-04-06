@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { IonicModule } from '@ionic/angular';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HomePage } from './home.page';
 
 import { HomePageRoutingModule } from './home-routing.module';
@@ -13,6 +13,8 @@ import { FooterComponent } from '../components/footer/footer.component';
 import { VetListComponent } from '../components/vet-list/vet-list.component';
 import { UserScreenComponent } from '../components/screens/user-screen/user-screen.component';
 import { HttpClientModule } from '@angular/common/http';
+import { CardComponent } from '../components/clinic-history/card/card.component';
+import { ClinicHistoryComponent } from '../components/clinic-history/clinic-history.component';
 
 @NgModule({
   imports: [
@@ -20,7 +22,8 @@ import { HttpClientModule } from '@angular/common/http';
     FormsModule,
     IonicModule,
     HomePageRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    ReactiveFormsModule
   ],
   declarations: [
     HomePage,
@@ -30,7 +33,9 @@ import { HttpClientModule } from '@angular/common/http';
     PresentationComponent,
     FooterComponent,
     VetListComponent,
-    UserScreenComponent
+    UserScreenComponent,
+    ClinicHistoryComponent,
+    CardComponent
   ]
 })
 export class HomePageModule { }

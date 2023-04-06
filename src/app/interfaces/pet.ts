@@ -1,4 +1,5 @@
 export interface Pet {
+  owner_fk: string;
   name: string;
   birthday: Date;
   species: string;
@@ -9,22 +10,22 @@ export interface Pet {
   color: string;
   has_chip: boolean;
   photo: string;
-  pet_id: string;
+  id: string;
 }
 
-export interface History extends Pet{
+export interface History{
   comments: string;
   date: Date;
   reason: string;
 }
 
-export interface Vacination extends History{
+export interface Vacination{
   date: Date;
   document: string;
   type: string;
 }
 
-export interface Test extends History{
+export interface Test{
   date: Date;
   document: string;
   type: string;

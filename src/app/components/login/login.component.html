@@ -8,13 +8,13 @@
         <div class="logo mb-4">
           <h2>4Pets</h2>
         </div>
-        <form action="" class="w-100 mb-3 zindex">
+        <form action="" class="w-100 mb-3 zindex" [formGroup]="loginForm" (ngSubmit)="onSubmit()">
           <div class="form-floating mb-3">
-            <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
-            <label >name@example.com</label>
+            <input type="email" class="form-control" id="floatingInput" formControlName="user" placeholder="name@example.com">
+            <label >user@example.com</label>
           </div>
           <div class="form-floating">
-            <input type="password" class="form-control" id="floatingPassword" placeholder="contraseña?">
+            <input type="password" class="form-control" id="floatingPassword" formControlName="password" placeholder="contraseña?">
             <label for="">password</label>
           </div>
         </form>

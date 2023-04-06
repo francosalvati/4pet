@@ -1,13 +1,26 @@
 {
-  "login": "login",
-  "signIn": "sign in",
-  "emergency": "emergency",
-  "veterinary": "veterinary",
-  "pets": "pets",
-  "user": "user",
-  "profile": "profile",
-  "welcome": "welcome",
-  "config": "config",
-  "shift": "shift",
-  "slogan" : "Not only does it help you, but also your best friend"
+  "nav": {
+    "apointment": "apointment",
+    "veterinary": "veterinary",
+    "login": {
+      "user": "user",
+      "login": "login",
+      "signIn": {
+        "signIn": "sign in"
+      }
+    },
+    "emergency": "emergency",
+    "more": "more",
+    "profile": "profile",
+    "pets": "pets",
+    "config": "config"
+  },
+
+  "presentation": {
+    "welcome": "welcome",
+    "slogan": "Not only does it help you, but also your best friend",
+    "section":{
+
+    }
+  }
 }

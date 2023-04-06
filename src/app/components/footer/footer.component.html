@@ -1,6 +1,12 @@
-<footer class="text-muted pt-5">
-  <div class="container">
-    <p class="mb-1">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatibus in omnis fugiat impedit cumque debitis maiores at culpa laborum temporibus tenetur, minima facere earum libero nulla magnam maxime nihil? Omnis!</p>
-    <p class="mb-0">centro de veterinarias donde <a href="/">4pet</a> lider <a href="#">desarrollado por...</a>.</p>
+<footer>
+  <div class="container mt-5">
+    <ul class="d-flex list-style-none justify-content-evenly">
+      <li *ngFor="let accion of accions">{{accion}}</li>
+    </ul>
+    <div class="d-flex justify-content-center">
+      <ul class="d-flex list-style-none justify-content-between" [ngStyle]= "{'width': '200px'}">
+        <li *ngFor="let gadget of gadgets">{{gadget}}</li>
+      </ul>
+    </div>
   </div>
 </footer>
