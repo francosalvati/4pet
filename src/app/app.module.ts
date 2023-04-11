@@ -8,7 +8,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 
 import { LoginComponent } from './components/login/login.component';
-import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { NgbAccordionModule, NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { SignInComponent } from './components/sign-in/sign-in.component';
 import { UserComponent } from './components/forms/user/user.component';
 import { DatepickerComponent } from './components/forms/datepicker/datepicker.component';
@@ -17,7 +17,6 @@ import { HttpClientModule, HttpClient } from '@angular/common/http';
 import { TranslateLoader, TranslateModule } from '@ngx-translate/core';
 import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 import { ApointmentComponent } from './components/apointment/apointment.component';
-import { CardComponent } from './components/clinic-history/card/card.component';
 
 @NgModule({
   declarations: [
@@ -45,7 +44,8 @@ import { CardComponent } from './components/clinic-history/card/card.component';
         useFactory: (createTranslateLoader),
         deps: [HttpClient]
       }
-    })
+    }),
+    NgbAccordionModule,
   ],
   providers: [{ provide: RouteReuseStrategy, useClass: IonicRouteStrategy }],
   bootstrap: [AppComponent],

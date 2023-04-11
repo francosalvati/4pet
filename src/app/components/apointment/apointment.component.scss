@@ -24,14 +24,6 @@
   cursor: pointer;
 }
 
-img {
-  object-fit: cover;
-}
-
-.form {
-  width: 95%;
-}
-
 h2 {
   font-weight: bold;
 }
@@ -50,11 +42,6 @@ h2 {
 .my-form {
   background-color: #f2f2f2;
   padding: 20px;
-}
-
-.modal{
-  position: fixed;
-  z-index: 1400 !important;
 }
 
 @media screen and (min-width: 600px) {
@@ -94,7 +81,7 @@ h2 {
     margin: auto;
     width: 95%;
     display: grid;
-    grid-template-columns: 30% 700px;
+    grid-template-columns: 30% 600px;
   }
 
 }
@@ -108,7 +95,29 @@ h2 {
   .date-picker{
     position: absolute;
     width: 20%;
-    right: 10%;
+    right: 4%;
+    top: 15%;
+  }
+
+}
+
+
+@media screen and (min-width: 1800px) {
+
+  .datepicker {
+    transform: scale(1);
+  }
+
+  .grid {
+    margin: auto;
+    width: 95%;
+    display: grid;
+    grid-template-columns: 30% 800px;
+  }
+
+  .date-picker{
+    width: 20%;
+    right: 6%;
     top: 10%;
   }
 

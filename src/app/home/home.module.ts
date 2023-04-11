@@ -4,6 +4,8 @@ import { IonicModule } from '@ionic/angular';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HomePage } from './home.page';
 
+import { NgbAccordionModule } from '@ng-bootstrap/ng-bootstrap';
+
 import { HomePageRoutingModule } from './home-routing.module';
 import { NavbarComponent } from '../components/navbar/navbar.component';
 import { VetComponent } from '../components/forms/vet/vet.component';
@@ -13,8 +15,9 @@ import { FooterComponent } from '../components/footer/footer.component';
 import { VetListComponent } from '../components/vet-list/vet-list.component';
 import { UserScreenComponent } from '../components/screens/user-screen/user-screen.component';
 import { HttpClientModule } from '@angular/common/http';
-import { CardComponent } from '../components/clinic-history/card/card.component';
 import { ClinicHistoryComponent } from '../components/clinic-history/clinic-history.component';
+import { PetCardComponent } from '../components/clinic-history/pet-card/pet-card.component';
+import { HistoryCardComponent } from '../components/clinic-history/history-card/history-card.component';
 
 @NgModule({
   imports: [
@@ -23,7 +26,8 @@ import { ClinicHistoryComponent } from '../components/clinic-history/clinic-hist
     IonicModule,
     HomePageRoutingModule,
     HttpClientModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    NgbAccordionModule
   ],
   declarations: [
     HomePage,
@@ -35,7 +39,8 @@ import { ClinicHistoryComponent } from '../components/clinic-history/clinic-hist
     VetListComponent,
     UserScreenComponent,
     ClinicHistoryComponent,
-    CardComponent
+    PetCardComponent,
+    HistoryCardComponent
   ]
 })
 export class HomePageModule { }

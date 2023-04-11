@@ -3,7 +3,7 @@
 
     <!-- form filter  -->
 
-    <form class="my-form">
+    <form class="my-form mt-4 p-4 w-100">
       <h2>
         Buscar turno
       </h2>
@@ -11,7 +11,7 @@
         <label for="location">Location</label>
         <input type="text" class="form-control" id="location" name="location">
       </div>
-      <div class="form-group">
+      <div class="form-group my-4">
         <label for="veterinary">Veterinary</label>
         <input type="text" class="form-control" id="veterinary" name="veterinary">
       </div>
@@ -19,47 +19,21 @@
         <label for="doctor">Doctor</label>
         <input type="text" class="form-control" id="doctor" name="doctor">
       </div>
+      <div class="text-center">
+        <button class="btn btn-warning mt-4 mx-auto text-center"> enviar </button>
+      </div>
     </form>
 
     <!-- filter date  -->
     <div class="column shadow date-picker">
       <div class="text p-4 d-flex align-items-center justify-content-between">
         <h2 class="m-0">Seleccionar fecha</h2>
-        <button class="btn btn-outline-primary"> <ion-icon name="search-outline"></ion-icon> </button>
       </div>
       <div class="search_container d-flex flex-column pt-4">
-        <div class="datepicker">
+        <div class="datepicker mb-4">
           <app-datepicker></app-datepicker>
         </div>
       </div>
-
-
-      <!-- modal -->
-
-
-      <ion-modal [isOpen]="isModalOpen" (willDismiss)="onWillDismiss($event)">
-        <ng-template>
-          <ion-header>
-            <ion-toolbar>
-              <ion-buttons slot="start">
-                <ion-button (click)="cancel()">Cancel</ion-button>
-              </ion-buttons>
-              <ion-title>Welcome</ion-title>
-              <ion-buttons slot="end">
-                <ion-button (click)="confirm()" [strong]="true">Confirm</ion-button>
-              </ion-buttons>
-            </ion-toolbar>
-          </ion-header>
-          <ion-content class="ion-padding">
-            <ion-item>
-              <ion-label position="stacked">Enter your name</ion-label>
-              <ion-input type="text" placeholder="Your name" [(ngModel)]="name"></ion-input>
-            </ion-item>
-          </ion-content>
-        </ng-template>
-      </ion-modal>
-
-
     </div>
   </div>
 
@@ -81,44 +55,9 @@
         </div>
         <p class="text-nowrap">{{turno.hora}}
           <br>
-
-          <button class="btn btn-outline-primary" data-bs-toggle="collapse" href="#multiCollapseExample1" role="button"
-            aria-expanded="false" aria-controls="multiCollapseExample1"><ion-icon
-              name="add-outline"></ion-icon></button>
-          <button *ngIf="userVet" (click)="setOpen(true)" class="btn btn-outline-primary">Pedir Turno</button>
           <span *ngIf="userVet" class="cancel">Cancelar</span>
         </p>
       </div>
-      <div class="row">
-        <div class="col">
-          <div class="collapse multi-collapse" id="multiCollapseExample1">
-            <div class="card card-body">
-              Some placeholder content for the first collapse component of this multi-collapse example. This panel is
-              hidden by default but revealed when the user activates the relevant trigger.
-            </div>
-          </div>
-        </div>
-      </div>
     </li>
-
-
-
-    <!-- ACORDEON  -->
-
-    <div class="accordion accordion-flush" id="accordionFlushExample">
-      <div class="accordion-item">
-        <h2 class="accordion-header">
-          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-            data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
-            Accordion Item #1
-          </button>
-        </h2>
-        <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-          <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the
-            <code>.accordion-flush</code> class. This is the first item's accordion body.
-          </div>
-        </div>
-      </div>
-    </div>
   </div>
 </div>

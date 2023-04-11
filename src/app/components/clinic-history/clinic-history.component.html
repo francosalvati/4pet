@@ -1,11 +1,16 @@
-<div class="card mb-3">
+<div class="card container h-100 mb-3 p-4">
   <div class="card-header">
-    <h4 class="card-title">Historia Clínica de la Mascota</h4>
+    <h2>historias clinicas de {{pet?.name}}</h2>
+  </div>
+  <div *ngIf=" pet; else elseContent" class="mx-auto">
+    <app-pet-card [pet]="pet"></app-pet-card>
+    <app-history-card [pet]="pet"></app-history-card>
   </div>
 
-  <div *ngIf=" pet; else elseContent" >
-    <app-card [pet]="pet"></app-card>
-  </div>
-  <ng-template #elseContent><h2>Error, la Mascota no existe.</h2></ng-template>
+
+  <ng-template #elseContent>
+    <h2>Error, la Mascota no existe.</h2>
+  </ng-template>
+
 
 </div>
